@@ -1,0 +1,167 @@
+(1)
+void main(){
+ a(12) ;
+}
+
+void a( num table){
+  for(num i = 1; i <= 10; i++){
+    print("12 x $i = ${12*i}");
+  }
+}
+
+(1)
+Console
+12 x 1 = 12
+12 x 2 = 24
+12 x 3 = 36
+12 x 4 = 48
+12 x 5 = 60
+12 x 6 = 72
+12 x 7 = 84
+12 x 8 = 96
+12 x 9 = 108
+12 x 10 = 120
+
+(2)
+void main(){
+List <int> lst = [2,4,6,8,9];
+  int number = 7;
+  for(int i = 0; i <= lst.length-1; i++){
+    result(lst[i],number);
+}
+}
+
+void result(int lst , int number){
+  print("Answer : ${lst / number}");
+}
+
+(2)
+Console
+Answer : 0.2857142857142857
+Answer : 0.5714285714285714
+Answer : 0.8571428571428571
+Answer : 1.1428571428571428
+Answer : 1.2857142857142858
+
+(3)
+void main(){
+List <String> name = ["Jack","Alberto","Smith","David","Peter"];
+  List <int> marks = [485,396,471,366,456];
+int totalmarks = 500;
+  for(int i = 0; i < name.length; i++){
+    marksheet(name[i] , marks[i] , totalmarks);
+  }
+}
+
+void marksheet(String name , int marks , int totalmarks){
+print("Student Name: $name");
+print("Student marks: $marks");
+  print("Student percentage: ${marks / totalmarks * 100} ");
+  if(marks > 450){
+    print("Grade A1");
+  }else{
+    print("Grade A");
+  }
+ }
+
+(3)
+Console
+Student Name: Jack
+Student marks: 485
+Student percentage: 97 
+Grade: A1
+Student Name: Alberto
+Student marks: 396
+Student percentage: 79.2 
+Grade: A
+Student Name: Smith
+Student marks: 471
+Student percentage: 94.19999999999999 
+Grade: A1
+Student Name: David
+Student marks: 366
+Student percentage: 73.2 
+Grade: A
+Student Name: Peter
+Student marks: 456
+Student percentage: 91.2 
+Grade: A1
+
+(4)
+void main(){
+ Bike obj = Bike();
+  print(obj.name);
+  obj.bike();
+  
+}
+
+class Bike{
+  var name = "Kawasaki ninja h2r";
+  void bike(){
+    print("Bike");
+  }
+}
+
+(4)
+Console
+Kawasaki ninja h2r
+Bike
+
+(5)
+void main(){
+ Name obj = Name();
+  print(" My name is ${obj.name}");
+}
+
+class Name{
+  var name = "Ahmed";
+}
+
+(5)
+Console
+ My name is Ahmed
+
+(6)
+void main(){
+Person me = Person(name: "Ahmed",age:21,education:"Intermediate");
+  me.data();
+}
+
+class Person{
+  String name;
+  int age;
+  String education;
+  
+  Person({required this.name,required this.age,required this.education});
+  
+  void data(){
+    print("My name is $name ,age $age & education is $education");
+  }
+}
+
+(6)
+Console
+My name is Ahmed ,age 21 & education is Intermediate
+
+(7)
+void main(){
+Parrot p = Parrot();
+  p.fly();
+  p.speak();
+}
+
+class Bird{
+  void fly(){
+    print("The bird can fly in the sky");
+  }
+}
+class Parrot extends Bird{
+  void speak(){
+    print("The parrot can speak in urdu language");
+  }
+}
+
+(7)
+Console
+The bird can fly in the sky
+The parrot can speak in urdu language
